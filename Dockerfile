@@ -28,4 +28,4 @@ RUN cd ZoneMinder \
 
 ENV OS=ubuntu
 ENV DIST=xenial
-RUN /tmp/ZoneMiner/utils/packpack/startpackpack.sh
+RUN /tmp/ZoneMinder/utils/packpack/startpackpack.sh
