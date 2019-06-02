@@ -20,10 +20,10 @@ RUN apt-get update -qq && \
     autoconf automake libtool \
     libargtable2-dev libavformat-dev ffmpeg
 
-/bin/cd /tmp
-git clone https://github.com/ZoneMinder/ZoneMinder
-cd ZoneMinder
-git checkout master
-git pull origin master
+RUN cd /tmp
+RUN git clone https://github.com/ZoneMinder/ZoneMinder
+RUN cd ZoneMinder
+RUN git checkout master
+RUN git pull origin master
 
-OS=ubuntu DIST=xenial utils/packpack/startpackpack.sh
+RUN OS=ubuntu DIST=xenial utils/packpack/startpackpack.sh
