@@ -20,7 +20,7 @@ RUN apt-get update -qq && \
     autoconf automake libtool \
     libargtable2-dev libavformat-dev ffmpeg
 
-cd /tmp
+/bin/cd /tmp
 git clone https://github.com/ZoneMinder/ZoneMinder
 cd ZoneMinder
 git checkout master
