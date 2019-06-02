@@ -25,5 +25,7 @@ RUN git clone https://github.com/ZoneMinder/ZoneMinder
 RUN cd ZoneMinder
 # RUN git checkout master
 # RUN git pull origin master
- 
-RUN OS=ubuntu DIST=xenial utils/packpack/startpackpack.sh
+
+ENV OS=ubuntu
+ENV DIST=xenial
+RUN ./utils/packpack/startpackpack.sh
