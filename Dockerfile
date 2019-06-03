@@ -22,7 +22,8 @@ RUN apt-get update -qq && \
 
 RUN cd /tmp \
 RUN git clone https://github.com/ZoneMinder/ZoneMinder \
-RUN cd ZoneMinder
+RUN cd ZoneMinder \
+RUN git checkout 1.32.3
 # RUN git checkout master
 # RUN git pull origin master
 
