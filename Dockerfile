@@ -7,10 +7,8 @@ ENV HOME="/config"
 
 #RUN useradd -u 1009 -g 100 users
 
-RUN \
- echo "**** install build packages ****" && \
- apk add --no-cache \
-	zoneminder mysql mysql-client lighttpd php5-fpm php5-pdo php5-pdo_mysql
+RUN apk add php5-fpm php5-pdo php5-pdo_mysql
+RUN apk add zoneminder mysql mysql-client lighttpd
 
 #RUN cd /tmp \
 #RUN git clone https://github.com/ZoneMinder/ZoneMinder /tmp/ZoneMinder
