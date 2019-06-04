@@ -20,10 +20,10 @@ RUN apt-get update -qq && \
     autoconf automake libtool \
     libargtable2-dev libavformat-dev ffmpeg
 
-RUN cd /tmp \
+# RUN cd /tmp \
 RUN git clone https://github.com/ZoneMinder/ZoneMinder /tmp/ZoneMinder \
 RUN cd /tmp/ZoneMinder \
-RUN git checkout 1.32.3
+# RUN git checkout 1.32.3
 RUN ls /tmp/ZoneMinder
 # RUN git checkout master
 # RUN git pull origin master
