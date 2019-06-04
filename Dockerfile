@@ -5,9 +5,7 @@ MAINTAINER nmcaullay <nmcaullay@gmail.com>
 
 ENV HOME="/config"
 
-#Create the HTS user (9981), and add to user group (9981)
-#RUN groupadd -g 1000 hts
-RUN useradd -u 1009 -g 100 users
+#RUN useradd -u 1009 -g 100 users
 
 RUN \
  echo "**** install build packages ****" && \
