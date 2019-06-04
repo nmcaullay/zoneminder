@@ -8,6 +8,7 @@ ENV HOME="/config"
 
 #RUN useradd -u 1009 -g 100 users
 
+RUN apk update
 RUN apk add --no-cache php5-fpm php5-pdo php5-pdo_mysql
 RUN apk add --no-cache zoneminder mysql mysql-client lighttpd
 
