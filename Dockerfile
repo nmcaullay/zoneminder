@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:latest
 #FROM lsiobase/alpine:3.9
 
 # maintained by Nathan
